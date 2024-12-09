@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+
+    <script>
+
+        /*
+
+        // true && true && false = false
+        // && é verdadeiro se todas as expressões forem verdadeiras
+        if (2 == 2 && 3>= 1 && 'a' == 'b') {
+            document.write('Verdadeiro')
+        } else {
+            document.write('Falso')
+        }
+
+        // true || true || false = true
+        // Para OU, se 1 resultado for TRUE a expressão é verdadeira
+        if (2 == 2 && 3>= 1 && 'a' == 'b') {
+            document.write('Verdadeiro')
+        } else {
+            document.write('Falso')
+        }
+
+        // ! negação inverte o resultado
+        // true = false
+        if (! (4 == 2)) {
+            document.write('Verdadeiro')
+        } else {
+            document.write('Falso')
+        }
+
+        */
+
+        var nota = prompt("Digite a nota do aluno ")
+        var faltas = prompt("Digite a quantidade de faltas do aluno")
+        var media = 7
+        var faltas_maximas = 15
+
+
+        if (nota >= media && faltas <= faltas_maximas) {
+            document.write("Aprovado")
+        } else {
+            document.write("Reprovado")
+        }
+
+        // Operador ternário
+        var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Falso'
+        document.write(resultado)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
